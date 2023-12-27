@@ -30,7 +30,7 @@ We have used these approaches to meet our requirements. Other approaches like De
 - sklearn
 
 **DATASET**
-The Dataset was taken from kaggle and was modified to our requirements.
+The Dataset was taken from kaggle and was modified to meet our requirements.
 
 Dataset link :https://www.kaggle.com/datasets/grassknoted/asl-alphabet/data 
 
