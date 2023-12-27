@@ -20,7 +20,7 @@ This is a team project that focuses on creating a robust American Sign Language 
 - Dropout
 - Early Stopping
   
-We have used these approaches to meet our requirements. Other approaches like DeepCNN can also be used.
+We have used these approaches to meet our requirements. Other approaches like DeepCNN and other activation functions can also be used.
 
 **MODULES USED**
 - Os
