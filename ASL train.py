@@ -1,12 +1,6 @@
 # American Sign Language with Deep Learning
-# TEAM_MEMBERS
-# ANGEL SARAH JOSEPHINE B- 36822101
-# INDHU MATHI K-	36822104
-# RITHISH R-	36822112
-# SUNIL KUMAR M-	36822114
-# SYED ALJIBRE A-	36822115
+
 # 2 LAYER CNN MODEL
-#BEST CASE
 
 import os
 import cv2
@@ -16,7 +10,7 @@ from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from keras.utils import to_categorical
 from sklearn.model_selection import train_test_split
 
-dataset_root = "C:\\Users\\rithi\\Desktop\\ASL DL\\Dataset\\ASL Alphabet\\Source"
+dataset_root = "\\path\\to\\your\\dataset\\"
 asl_images = []
 asl_labels = []
 
@@ -73,7 +67,7 @@ model.compile(optimizer='adam',loss='categorical_crossentropy',metrics=['accurac
 
 # Train the model
 model.fit(x_train, y_train, epochs=10, batch_size=64, validation_data=(x_test, y_test))
-model.save("C:\\Users\\rithi\\Desktop\\ASL DL\\Model\\asl_model.h5")
+model.save("path\\to\\save\\your\\trained\\model")
 
 # Evaluate the model on the test data
 test_loss, test_acc = model.evaluate(x_test, y_test)
