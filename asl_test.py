@@ -1,17 +1,11 @@
 # American Sign Language with Deep Learning
-# TEAM_MEMBERS
-# ANGEL SARAH JOSEPHINE B- 36822101
-# INDHU MATHI K-	36822104
-# RITHISH R-	36822112
-# SUNIL KUMAR M-	36822114
-# SYED ALJIBRE A-	36822115
-# TEST CASE
+
 import cv2
 import numpy as np
 from keras.models import load_model
 
 # Load your trained model
-model = load_model("C:\\Users\\rithi\\Desktop\\ASL DL\\Model\\asl_model.h5")  # Replace with the path to your trained model
+model = load_model("Replace\\with\\the\\path\\to\\your\\trained\\model")
 
 # Define the labels corresponding to the classes
 class_labels = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q",
@@ -37,7 +31,7 @@ def recognize_asl_hand_sign(image_path):
     predicted_class = class_labels[np.argmax(predictions)]
     return predicted_class
 
-image_path = ("C:\\Users\\rithi\\Desktop\\ASL DL\\Dataset\\ASL Alphabet\\Source\\D\\F109.jpg")  # Replace with the actual path to your image
+image_path = ("Replace\\with\\the\\actual\\path\\to\\your\\image")   
 
 # Perform ASL hand sign recognition
 predicted_class = recognize_asl_hand_sign(image_path)
